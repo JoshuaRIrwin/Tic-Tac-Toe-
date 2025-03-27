@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic Tac Toe!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon and Manifest -->
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <nav class="naviBar background">
+    <div class="logo">
+        <img src="Logo.png"
+             style="height: 90px;">
+    </div>
+    </div>
+    <ul class="naviList">
+        <li><a href="index.html">Play!</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  
+<section class="dashboardSection">
+  <div class="mainBox">
+      <div class="firstHalf">
+        <h1 class="headerText"
+              id="dashboard">Play Tic Tac Toe!<br>
+        </h1>
+        <p class="normalText">
+          Play as 'X' or 'O' and place three in a vertical, horizontal, or diagonal line to win!
+          <br />
+          <br />
+          Click PvP local to play locally or PvP online for online multiplayer!
+          <br />
+          <br />
+          <br />
+        </p>
+        <!-- These buttons direct the user to what mode they want to play -->
+        <div id="gameButton">
+          <input type="button" value="PvP local!" id="gameButton" onclick="document.getElementById('board').scrollIntoView(); gameButton()"/>
+        </div>
+          <br />
+          <br />
+          <!-- This button currently does the same as the above, modify it to play the online mode, and delete this comment once finished! -->
+        <div id="gameButton">
+          <input type="button" value="PvP online!" id="gameButton" onclick="document.getElementById('board').scrollIntoView(); gameButton()"/>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="nextSection">
+  <div class="mainBox">
+      <div class="oneHalf">
+        <h2 
+              id="message">Play Tic Tac Toe!<br>
+        </h2>
+        <div id="board">
+          <div class="square" id="square0"></div>
+          <div class="square" id="square1"></div>
+          <div class="square" id="square2"></div>
+          <div class="square" id="square3"></div>
+          <div class="square" id="square4"></div>
+          <div class="square" id="square5"></div>
+          <div class="square" id="square6"></div>
+          <div class="square" id="square7"></div>
+          <div class="square" id="square8"></div>
+       </div>
+       <br />
+       <br />
+       <br />
+       <br />  
+       <br />
+       <br />  
+      <div id="gameButton">
+          <input type="button" value="Play Again!" id="gameButton" onclick="gameButton()"/>
+      </div>
+      </div>
+  </div>       
+</section>
+
+<footer class="background">
+  <p class="footerText">
+      Copyright © CSCI 2020U Winter 2024
+  </p>
+</footer>
+
+<!-- JavaScript Script -->
+<script src="js/main.js"></script>
+
+<!-- Optional: Google Analytics -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
